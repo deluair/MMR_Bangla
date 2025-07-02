@@ -1,28 +1,19 @@
-# Bengali Multi-Modal Researcher (MMR_Bangla)
+# 🇧🇩 Bengali Multi-Modal Researcher
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![LangGraph](https://img.shields.io/badge/LangGraph-0.2.6+-green.svg)](https://github.com/langchain-ai/langgraph)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Latest-green.svg)](https://github.com/langchain-ai/langgraph)
+[![Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-orange.svg)](https://ai.google.dev/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This project is a specialized fork and modification of the original [LangChain Multi-Modal Researcher](https://github.com/langchain-ai/multi-modal-researcher), specifically adapted to generate comprehensive research reports and podcast scripts in the **Bengali language**.
+An AI-powered research assistant that generates comprehensive research reports and podcast scripts in Bengali using Google's Gemini 1.5 Flash and LangGraph.
 
-## 🎯 What It Does
+## ✨ Features
 
-Given a research topic in Bengali, this intelligent agent:
-- 🔍 **Performs comprehensive web searches** using advanced search strategies
-- 📊 **Synthesizes information** from multiple sources with source attribution
-- 📝 **Generates detailed research reports** in Markdown format (Bengali)
-- 🎙️ **Creates conversational podcast scripts** between two speakers (Bengali)
-- 🔊 **Produces audio podcasts** using Google's Text-to-Speech (currently English voice reading Bengali text)
-
-## ✨ Key Features
-
-- **Bengali Language Support**: All research outputs are generated in Bengali
-- **Source Attribution**: Proper citation and source tracking for research integrity
-- **Multi-Modal Output**: Text reports, scripts, and audio files
-- **LangGraph Integration**: Uses advanced graph-based AI workflows
-- **Gemini AI Powered**: Leverages Google's Gemini 1.5 Flash model
-- **Asynchronous Processing**: Efficient handling of long-running research tasks
+- 🌐 **Bengali Language Support** - Native Bengali text generation
+- 📚 **Source Attribution** - Automatic citations and references
+- 🎙️ **Multi-Modal Output** - Research reports, podcast scripts, and audio
+- ⚡ **Gemini AI Powered** - Latest Gemini 1.5 Flash model
+- 🔄 **LangGraph Integration** - Advanced workflow orchestration
 
 ***
 
