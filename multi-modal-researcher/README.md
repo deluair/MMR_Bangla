@@ -1,106 +1,20 @@
 # 🇧🇩 Bengali Multi-Modal Researcher
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Latest-green.svg)](https://github.com/langchain-ai/langgraph)
-[![Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-orange.svg)](https://ai.google.dev/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+AI research assistant that generates Bengali research reports, podcast scripts, and audio using Gemini AI.
 
-An AI-powered research assistant that generates comprehensive research reports and podcast scripts in Bengali using Google's Gemini 1.5 Flash and LangGraph.
+## Quick Start
 
-## ✨ Features
-
-- 🌐 **Bengali Language Support** - Native Bengali text generation
-- 📚 **Source Attribution** - Automatic citations and references
-- 🎙️ **Multi-Modal Output** - Research reports, podcast scripts, and audio
-- ⚡ **Gemini AI Powered** - Latest Gemini 1.5 Flash model
-- 🔄 **LangGraph Integration** - Advanced workflow orchestration
-
-***
-
-## Project Structure
-
-The project has been refactored for clarity and scalability:
-
-```
-multi-modal-researcher/
-├── examples/
-│   ├── run_example.py                # Main script to run an example
-│   └── bengali_climate_change.py     # Logic for a specific example topic
-├── src/
-│   └── agent/
-│       ├── __init__.py
-│       ├── configuration.py          # Model and TTS settings
-│       ├── graph.py                  # LangGraph implementation
-│       ├── state.py                  # Defines the agent's state
-│       └── utils.py                  # Core functions for report/podcast generation
-├── output/
-│   └── ...                           # Generated reports and audio files appear here
-├── .env                              # Stores your API key (must be created manually)
-├── .gitignore
-├── pyproject.toml
-└── README.md
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.11 or higher
-- Google Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
-- Internet connection for web searches
-
-### Installation
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/deluair/MMR_Bangla.git
-    cd MMR_Bangla/multi-modal-researcher
-    ```
-
-2.  **Create Virtual Environment (Recommended):**
-    ```bash
-    python -m venv venv
-    
-    # On Windows
-    venv\Scripts\activate
-    
-    # On macOS/Linux
-    source venv/bin/activate
-    ```
-
-3.  **Install Dependencies:**
-    ```bash
-    pip install -e .
-    ```
-    
-    Or install manually:
-    ```bash
-    pip install langgraph>=0.2.6 langchain>=0.3.19 langchain-google-genai python-dotenv rich google-genai fastapi
-    ```
-
-4.  **Set Up Your API Key:**
-    Create a file named `.env` in the root of the `multi-modal-researcher` directory:
-    ```bash
-    # Copy the example file
-    cp .env.example .env
-    
-    # Edit the .env file and add your API key
-    GEMINI_API_KEY="your_actual_api_key_here"
-    ```
-
-### 🎯 Basic Usage
-
-Run the default example (Climate Change in Bangladesh):
 ```bash
+git clone https://github.com/deluair/MMR_Bangla.git
+cd MMR_Bangla/multi-modal-researcher
+pip install -e .
+cp .env.example .env  # Add your GEMINI_API_KEY
 python examples/run_example.py
 ```
 
-The script will:
-1. 🔍 Search for information about climate change in Bangladesh
-2. 📝 Generate a comprehensive Bengali research report
-3. 🎙️ Create a Bengali podcast script
-4. 🔊 Produce an audio file (English voice reading Bengali text)
-5. 💾 Save all outputs to the `output/` directory
+**Outputs:** Bengali research report, podcast script, and audio file.
+
+**Requirements:** Python 3.8+, Gemini API key
 
 ## 📚 Custom Usage
 
